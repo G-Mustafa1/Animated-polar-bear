@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Igloo and bears</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <button id='VR' class='button toggleVR' onclick='toggleVR()' title='Toggle VR Mode for Mobile Devices Only'>
+      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-12 -12 48 48"><path fill="#fff" d="M23.058 5.038H.942c-.522 0-.942.422-.942.94V18.02c0 .522.423.942.942.942H8.8c.26 0 .492-.174.564-.425.88-3.028 1.062-4.754 2.724-4.754 1.66 0 1.905 1.973 2.685 4.766.068.243.29.41.543.41h7.743c.52 0 .94-.424.94-.943V5.982c0-.522-.42-.944-.942-.944zm-16.43 9.467c-1.384 0-2.504-1.12-2.504-2.504s1.12-2.503 2.504-2.503 2.5 1.12 2.5 2.504-1.12 2.505-2.5 2.505zm10.744 0c-1.384 0-2.504-1.12-2.504-2.504s1.12-2.503 2.504-2.503c1.383 0 2.504 1.12 2.504 2.504s-1.12 2.505-2.504 2.505z"/></svg>
+    </button>
+  
+  <section>
+    <h1><span class="low">Polar Bear Facts</span> 101:</h1>
+    <p>Adult polar bears have no natural predators except other polar bears. Cubs less than one year old sometimes are prey to wolves and other carnivores. Newborn cubs may be cannibalized by malnourished mothers or adult male polar bears.</p>
+    <small>source: <br>
+    <a href="https://seaworld.org/animals/all-about/polar-bear/longevity/" target="_blank">seaworld.org</a><br>
+  </section>
+  
+  
+    <div class="btn-group">
+      <span>RL</span>
+      <span>RR</span>
+    </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
+  <script src="https://static.staticsave.com/threejs/jsonloader.js"></script>
+  <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://unpkg.com/three@0.126.0/examples/js/controls/DeviceOrientationControls.js"></script>
+  <script src="https://unpkg.com/three@0.126.0/examples/js/effects/StereoEffect.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>

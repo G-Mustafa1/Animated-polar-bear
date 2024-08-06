@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed|Playfair+Display:700i|Didact+Gothic");
+html,
+body {
+  overflow: hidden;
+  background: black;
+
+  font-family: monospace;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 30px;
+  line-height: 1;
+}
+h3 {
+  font-weight: lighter;
+}
+
+section {
+  color: white;
+  max-width: 275px;
+  width: 100%;
+  display: none;
+  font-size: 14px;
+}
+p {
+  color: rgba(255, 255, 255, 0.5);
+}
+a {
+  color: white;
+}
+
+span.low {
+  color: skyblue;
+}
+.btn-group {
+  display: flex;
+  -webkit-display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  width: 100%;
+  padding: 50px 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+.btn-group span {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: white;
+  background: #222;
+  color: white;
+  text-align: center;
+  display: flex;
+  -webkit-display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#VR {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  outline: none;
+  border: none;
+  width: 60px;
+  height: 40px;
+  z-index: 100;
+  background: rgba(135, 206, 250, 0.75);
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  visibility: hidden;
+}
+
+#VR svg {
+  width: 60px;
+  height: 35px;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  fill: white;
+}
+button {
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1100px) {
+  section {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+}
+
+/* Show only on touchscreen devices */
+@media (pointer: coarse) {
+  .btn-group,
+  #VR {
+    visibility: visible;
+  }
+  .hide {
+    visibility: hidden;
+  }
+}
